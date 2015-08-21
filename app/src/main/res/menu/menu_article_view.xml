@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.HIPER.DiabetesInControlMobileApp.ArticleViewActivity">
+    <item android:id="@+id/menu_favorite" android:title="Favorite"
+        android:icon="@drawable/favorite" app:showAsAction="ifRoom" />
+</menu>

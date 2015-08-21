@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.8"
+        android:background="#FFFFFF"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/titleTextView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_toStartOf="@+id/gridViewFavoriteButton"
+            android:textColor="#333333" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/descrTextView"
+            android:ellipsize="end"
+            android:layout_below="@+id/titleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:id="@+id/gridViewFavoriteButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/favorite"
+            android:scaleType="fitCenter"
+            android:longClickable="false"
+            android:paddingTop="4dp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="New Button"
+        android:id="@+id/readMoreOutline"
+        android:layout_gravity="right"
+        android:background="#ABABAB"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text="READ MORE"
+        android:id="@+id/readMoreButton"
+        android:layout_gravity="center_horizontal"
+        android:background="#F7F7F7"
+        android:textColor="#ACACAC"
+        android:layout_weight="0.2"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</LinearLayout>
